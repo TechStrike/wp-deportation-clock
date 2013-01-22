@@ -1,23 +1,23 @@
 #Deportation Clock
 ====================
 
-A Wordpress port of the Deportation Clock. It currently provides a simple widget that can be used inside of any WordPress theme.
+A WordPress port of the Deportation Clock. It currently provides a simple widget that can be used inside of any WordPress theme.
 
 ##Features
-* Simple way to show the urgency of the Deporation crisis
+* Simple way to show the urgency of the Deportation crisis
 * Easily change the background art
 * Set your own action link
 * Set your own widget title
 
 
 ##Installation
-It is a standard plug-in.
+It is a standard WordPress plug-in. Tested on WordPress 3.5.x, 3.4.x. Please submit any issues found on lower versions. Goal is 2.9+.
 
-#####Method 1
+#####Method 1 (pending)
 Search for the plug-in from inside of your WordPress admin and install.
 
 #####Method 2
-Download the plug-in [zip link] and upload it to the plugins folder of your WordPress using sftp. 
+Download the plug-in [zip link], unzip it, and upload it to the plugins folder of your WordPress using sftp. 
 
 #####Method 3 
 Download the plug-in [zip link] and upload it via the admin, under Plugins -> Add New -> Upload
@@ -33,6 +33,9 @@ Download the plug-in [zip link] and upload it via the admin, under Plugins -> Ad
 * [jQuery Easing](http://gsgd.co.uk/sandbox/jquery/easing/) by George McGinley Smith
  
 
-
 ###Credits
 Initial DeportationClock.js by Josh Levinger and Mike Vattuone of Citizen Engagement Lab for [Presente.org](http://Presente.org/deportations/)
+
+
+###License
+Probably MIT (pending). All included dependencies retain their respective licenses.
