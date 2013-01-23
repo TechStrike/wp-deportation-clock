@@ -13,14 +13,15 @@ A WordPress port of the Deportation Clock. It currently provides a simple widget
 ##Installation
 It is a standard WordPress plug-in. Tested on WordPress 3.5.x, 3.4.x. Please submit any issues found on lower versions. Goal is 2.9+.
 
-#####Method 1 (pending)
-Search for the plug-in from inside of your WordPress admin and install.
+#####Method 1
+Download the plug-in [zip link], unzip it, and upload it to the plugins folder of your WordPress using sftp. Activate it. 
 
-#####Method 2
-Download the plug-in [zip link], unzip it, and upload it to the plugins folder of your WordPress using sftp. 
+#####Method 2 
+Download the plug-in [zip link] and upload it via the admin, under Plugins -> Add New -> Upload. Activate it.
 
-#####Method 3 
-Download the plug-in [zip link] and upload it via the admin, under Plugins -> Add New -> Upload
+
+##Usage
+Log into your WordPress Admin. Go to Appearance -> Widgets. The new Deportation Clock widget is now usable.
 
 
 ###Dependencies (included)
@@ -34,7 +35,7 @@ Download the plug-in [zip link] and upload it via the admin, under Plugins -> Ad
  
 
 ###Credits
-Initial DeportationClock.js by Josh Levinger and Mike Vattuone of Citizen Engagement Lab for [Presente.org](http://Presente.org/deportations/)
+Initial DeportationClock.js by Josh Levinger and Mike Vattuone of Citizen Engagement Lab for [Presente.org](http://Presente.org)
 
 
 ###License
