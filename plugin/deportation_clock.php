@@ -10,8 +10,10 @@ License: MIT
 */
 
 if (!defined( DC_OBAMA_PLUGINURL ))
-  //define( DC_OBAMA_PLUGINURL, plugin_dir_url(__FILE__)); 
-  define( DC_OBAMA_PLUGINURL, 'http://localhost/wp-content/plugins/deportation_clock' ); 
+  define( DC_OBAMA_PLUGINURL, plugin_dir_url(__FILE__));
+
+if (!defined( DC_OBAMA_PLUGINURL_NOHOST ))
+  define( DC_OBAMA_PLUGINURL_NOHOST, str_replace(site_url(),'', plugin_dir_url(__FILE__) );
 
 if (!defined( DC_OBAMA_PLUGINPATH ))
   define( DC_OBAMA_PLUGINPATH, plugin_dir_path(__FILE__));

@@ -35,6 +35,25 @@
   font-family: "Fjalla One", sans-serif;
   line-height: 20px;
 }
+.deportation-clock-container #counter .action_ask {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  margin: 5px 0px 0px 0px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+}
+.deportation-clock-container #counter .action_ask a {
+  color: yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.deportation-clock-container #counter .action_ask a:hover {
+  color: red;
+}
 .deportation-clock-container #counter #flipcounter {
   margin: 60px -20px 0px -10px;
   width: 300px;

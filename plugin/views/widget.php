@@ -8,6 +8,9 @@
 			<div class="fade-in">&hellip;and counting</div>
 			<div id="pulse">another <strong>every minute</strong><span></span></div>
 		</div>
+		<div class="action_ask">
+			<a href="<?php echo $action_link; ?>">Act Now</a>
+		</div>
 	</div>
 </div>
 <!-- /Deportation Clock widget -->

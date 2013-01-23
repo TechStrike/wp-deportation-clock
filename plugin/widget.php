@@ -24,7 +24,7 @@ function Deportation_Clock_Widget() {
   );
 
   /* Create the widget. */
-  $this->WP_Widget( 'Deportation_Clock_Widget', __('Deportation Clock Widget'), $widget_ops, $control_ops );
+  $this->WP_Widget( 'Deportation_Clock_Widget', __('Deportation Clock'), $widget_ops, $control_ops );
   
 }
 
@@ -36,22 +36,16 @@ function Deportation_Clock_Widget() {
 function widget( $args, $instance ) {
   extract( $args );
   
-  $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
-  $link = apply_filters( 'widget_text', empty( $instance['link'] ) ? '' : $instance['link'], $instance );
-  $text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
+  $title          = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+  $background_url = apply_filters( 'widget_text', empty( $instance['background_url'] ) ? '' : $instance['background_url'], $instance );
+  $action_link    = apply_filters( 'widget_text', empty( $instance['action_link'] ) ? '' : $instance['action_link'], $instance );
+
+  $background_url = (!empty( $background_url )) ? $background_url : '';
 
   echo $before_widget;
   if ( !empty( $title ) ) { echo $before_title . $title . $after_title; } 
 
-  //$background_url = DC_OBAMA_PLUGINURL . '/assets/img/dc_obama_background.png';
-  $background_url = '';
-
   include DC_OBAMA_PLUGINPATH .'/views/widget.php';
-
-  /*
-    <a href="<?php echo $link; ?>"></a></div>
-    <div class="textwidget"><?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
-  */  
 
   // After widget (defined by theme functions file)
   echo $after_widget;
@@ -66,14 +60,9 @@ function widget( $args, $instance ) {
 function update( $new_instance, $old_instance ) {
   $instance = $old_instance;
 
-  $instance['title'] = strip_tags($new_instance['title']);
-  $instance['link'] = $new_instance['link'];
-
-  if ( current_user_can('unfiltered_html') )
-    $instance['text'] =  $new_instance['text'];
-  else
-    $instance['text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['text']) ) ); // wp_filter_post_kses() expects slashed
-  $instance['filter'] = isset($new_instance['filter']);
+  $instance['title']          = sanitize_text_field($new_instance['title']);
+  $instance['background_url'] = esc_url($new_instance['background_url']);
+  $instance['action_link']    = esc_url($new_instance['action_link']);
 
   return $instance;
 }
@@ -85,10 +74,10 @@ function update( $new_instance, $old_instance ) {
    
 function form( $instance ) {
 
-  $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'link' => '', 'text' => '' ) );
-  $title = strip_tags($instance['title']);
-  $link = $instance['link'];
-  $text = esc_textarea($instance['text']);
+  $instance       = wp_parse_args( (array) $instance, array( 'title' => '', 'background_url' => '', 'action_link' => '' ) );
+  $title          = sanitize_text_field($instance['title']);
+  $background_url = esc_url($instance['background_url']);
+  $action_link    = esc_url($instance['action_link']);
   
   ?>
 
@@ -98,17 +87,19 @@ function form( $instance ) {
     <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
   </p>
 
-  <!-- Widget Link: Text Input -->
+  <!-- Widget Background Image: Text Input -->
   <p>
-    <label for="<?php echo $this->get_field_id('link'); ?>"><?php _e('Link:'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo esc_attr($link); ?>" /></p>
+    <label for="<?php echo $this->get_field_id('background_url'); ?>"><?php _e('Background Image:'); ?></label>
+    <input class="widefat" id="<?php echo $this->get_field_id('background_url'); ?>" name="<?php echo $this->get_field_name('background_url'); ?>" type="text" value="<?php echo esc_attr( DC_OBAMA_PLUGINURL_NOHOST . '/assets/img/dc_obama_background.png' ); ?>" /></p>
   </p>
 
-  <!-- Widget Text: Text Input -->
+  <!-- Widget Action Link: Text Input -->
   <p>
-    <label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Text:'); ?></label>
-    <textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
+    <label for="<?php echo $this->get_field_id('action_link'); ?>"><?php _e('Action Link:'); ?></label>
+    <input class="widefat" id="<?php echo $this->get_field_id('action_link'); ?>" name="<?php echo $this->get_field_name('action_link'); ?>" type="text" value="<?php echo esc_attr('http://presente.org/deportations/'); ?>" /></p>
   </p>
+
+
 
   <?php
   }

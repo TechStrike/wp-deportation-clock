@@ -37,7 +37,7 @@ function setupFlipCounter(value) {
     flip.flipCounter({
         imagePath: flip.data("flipcounterimgpath"),
         digitHeight: 40,
-        digitWidth: 30,
+        digitWidth: 30, 
         numFractionalDigits:0, // number of places right of the decimal point to maintain
         easing: jQuery.easing.easeOutQuint, //so it slows way down at the end
         formatNumberOptions:{format:"##,###,###.",locale:"us"},
@@ -54,10 +54,14 @@ function setupFlipCounter(value) {
             end_number:value,
             duration:10000
     });
+
 }
 
 //init
 setupFlipCounter(currentDeportations());
+
+//log the ask
+console.log('{"FTW" : "git@github.com:TechStrike"}');
 
 })(jQuery);
 
