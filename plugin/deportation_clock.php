@@ -23,7 +23,6 @@ class Deportation_Clock {
   public function __construct()
   {
     add_action( 'init', array( $this, 'register_libs' ) );
-    
     add_action( 'widgets_init', array( $this, 'register_widget' ) );
   }
 

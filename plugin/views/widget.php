@@ -1,4 +1,4 @@
-<!-- Counter -->
+<!-- Deportation Clock widget -->
 <div class="deportation-clock-container">
 	<div id="counter" style="background-image:url('<?php echo $background_url ?>')">
 		<div id="flipcounter" data-flipcounterimgpath="<?php echo DC_OBAMA_PLUGINURL .'/assets/img/flipCounter-medium.png' ?>">
@@ -10,5 +10,5 @@
 		</div>
 	</div>
 </div>
-<!-- /Counter -->
+<!-- /Deportation Clock widget -->
 
