@@ -1,0 +1,57 @@
+@textcolor: #ff6600;
+@textheader: #fff;
+@fonthero: "Fjalla One", sans-serif;
+
+.deportation-clock-container {
+  #counter {
+    min-height: 220px;
+    border-radius: 7px;
+    padding: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: right; 
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffe3d0;
+    #pulse {
+      display: none;
+      position: relative;
+      top: 0px;
+      padding-bottom: 5px;
+      span {
+        position: absolute;
+        top: 0px;
+        padding-left: 2px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      strong{
+        font-weight: regular;
+      }
+    }
+    .counter_text {
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      padding: 5px 0px 5px 0px;
+      margin: 10px 0px 0px 0px;
+      font-size: 15px;
+      color: @textheader;
+      text-align: center;
+      font-family: @fonthero;
+      line-height: 20px;
+    }
+    #flipcounter {
+      margin: 60px -20px 0px -10px;
+      width:300px;
+    }
+    div.fade-in {
+      display: none;
+    }
+    h1 {
+      font: 108px/118px @fonthero;
+      font-weight: bold;
+      letter-spacing: -0.03em;
+      color: @textheader;
+      text-align: center;
+    }
+  }
+}
