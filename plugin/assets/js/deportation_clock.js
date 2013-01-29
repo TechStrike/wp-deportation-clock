@@ -2,6 +2,7 @@
 
 // DeportationClock.js
 // updated 2013Jan17
+// MIT License
 // Mike Vattuone, Josh Levinger, Citizen Engagement Lab
 
 //globals
