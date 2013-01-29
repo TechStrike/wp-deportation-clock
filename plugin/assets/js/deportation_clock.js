@@ -35,7 +35,7 @@ function setupFlipCounter(value) {
     var flip = $("#flipcounter");
 
     flip.flipCounter({
-        imagePath: flip.data("flipcounterimgpath"),
+        imagePath: flip.attr("data-flipcounterimgpath"), //WP2.9 uses jQuery-1.3.2, no $.data()
         digitHeight: 40,
         digitWidth: 30, 
         numFractionalDigits:0, // number of places right of the decimal point to maintain
@@ -44,7 +44,7 @@ function setupFlipCounter(value) {
         onAnimationStopped: function() {
             //fade in
             $('#counter div.fade-in').fadeIn();
-            $('#counter #pulse').delay(1500).fadeIn();
+            $('#counter #pulse').delay(1500).fadeIn(); //jQuery 1.3.2, no delay()
             setInterval(updateCounter, 1000);
         }
     });

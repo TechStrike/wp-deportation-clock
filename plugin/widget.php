@@ -90,7 +90,7 @@ function form( $instance ) {
   <!-- Widget Background Image: Text Input -->
   <p>
     <label for="<?php echo $this->get_field_id('background_url'); ?>"><?php _e('Background Image:'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('background_url'); ?>" name="<?php echo $this->get_field_name('background_url'); ?>" type="text" value="<?php echo esc_attr( DC_OBAMA_PLUGINURL_NOHOST . '/assets/img/dc_obama_background.png' ); ?>" /></p>
+    <input class="widefat" id="<?php echo $this->get_field_id('background_url'); ?>" name="<?php echo $this->get_field_name('background_url'); ?>" type="text" value="<?php echo esc_attr( DC_OBAMA_PLUGINURL_NOHOST . 'assets/img/dc_obama_background.png' ); ?>" /></p>
   </p>
 
   <!-- Widget Action Link: Text Input -->
