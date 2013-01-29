@@ -3,6 +3,8 @@
 
 A WordPress port of the Deportation Clock. It currently provides a simple widget that can be used inside of any WordPress theme.
 
+![image](https://raw.github.com/TechStrike/wp-deportation-clock/master/plugin/assets/img/screenshot.png)
+
 ##Features
 * Simple way to show the urgency of the Deportation crisis
 * Easily change the background art
@@ -11,7 +13,7 @@ A WordPress port of the Deportation Clock. It currently provides a simple widget
 
 
 ##Installation
-It is a standard WordPress plug-in. Tested on WordPress 3.5.x, 3.4.x. Please submit any issues found on lower versions. Goal is 3.0+. WP2.9 has issues.
+It is a standard WordPress plug-in. Tested on WordPress 3.5.x. WP 2.9 to WP 3.4 has width spacing issues. Please submit any issues found on lower versions. Goal is 3.0+.
 
 #####Method 1
 Download the plug-in [zip link], unzip it, and upload it to the plugins folder of your WordPress using sftp. Activate it. 
