@@ -13,7 +13,7 @@ A WordPress port of the Deportation Clock. It currently provides a simple widget
 
 
 ##Installation
-It is a standard WordPress plug-in. Tested on WordPress 3.5.x. WP 2.9 to WP 3.4 has width spacing issues. Please submit any issues found on lower versions. Goal is 3.0+.
+It is a standard WordPress plug-in. Tested on WordPress 3.5.x to WP 3.1. Please submit any issues found on lower versions. Goal is 3.0+.
 
 #####Method 1
 [Download the plug-in](https://raw.github.com/TechStrike/wp-deportation-clock/master/bin/deportation_clock.zip), unzip it, and upload it to the plugins folder of your WordPress using sftp. Activate it. 
