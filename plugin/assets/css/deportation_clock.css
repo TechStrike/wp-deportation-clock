@@ -1,2 +1,73 @@
-.deportation-clock-container #counter{min-height:220px;border-radius:7px;padding:16px 10px;background-repeat:no-repeat;background-position:center;width:100%;height:100%;max-width:210px;min-width:185px;border:1px solid #ffe3d0}.deportation-clock-container #counter #pulse{display:none;position:relative;top:0;padding-bottom:5px}.deportation-clock-container #counter #pulse span{position:absolute;top:0;padding-left:2px;font-weight:700;font-size:16px}.deportation-clock-container #counter #pulse strong{font-weight:regular}.deportation-clock-container #counter .counter_text{background:rgba(0,0,0,.6);width:100%;padding:5px 0 0 0;margin:0;font-size:15px;color:#fff;text-align:center;font-family:"Fjalla One",sans-serif;line-height:18px}.deportation-clock-container #counter .action_ask{background:rgba(0,0,0,.6);width:100%;padding:0;margin:5px 0 0 0;font-size:18px;font-family:"Fjalla One",sans-serif;text-align:center;line-height:20px}.deportation-clock-container #counter .action_ask a{color:#ff0;text-decoration:none;text-transform:uppercase;letter-spacing:.2em;font-weight:400}.deportation-clock-container #counter .action_ask a:hover{color:red}.deportation-clock-container #counter #flipcounter{margin:93px auto 1px auto;width:190px}.deportation-clock-container #counter div.fade-in{display:none}.deportation-clock-container #counter h1{font:108px/118px "Fjalla One",sans-serif;font-weight:700;letter-spacing:-.03em;color:#fff;text-align:center}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+.deportation-clock-container #counter {
+  min-height: 220px;
+  border-radius: 7px;
+  padding: 16px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  max-width: 210px;
+  min-width: 185px;
+  border: 1px solid #ffe3d0;
+}
+.deportation-clock-container #counter #pulse {
+  display: none;
+  position: relative;
+  top: 0px;
+  padding-bottom: 5px;
+}
+.deportation-clock-container #counter #pulse span {
+  position: absolute;
+  top: 0px;
+  padding-left: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.deportation-clock-container #counter #pulse strong {
+  font-weight: regular;
+}
+.deportation-clock-container #counter .counter_text {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  line-height: 18px;
+}
+.deportation-clock-container #counter .action_ask {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
+  font-size: 18px;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  line-height: 20px;
+}
+.deportation-clock-container #counter .action_ask a {
+  color: yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: normal;
+}
+.deportation-clock-container #counter .action_ask a:hover {
+  color: red;
+}
+.deportation-clock-container #counter #flipcounter {
+  margin: 93px auto 1px auto;
+  width: 190px;
+}
+.deportation-clock-container #counter div.fade-in {
+  display: none;
+}
+.deportation-clock-container #counter h1 {
+  font: 108px/118px "Fjalla One", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-align: center;
+}
