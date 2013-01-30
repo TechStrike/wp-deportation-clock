@@ -37,8 +37,8 @@ function setupFlipCounter(value) {
 
     flip.flipCounter({
         imagePath: flip.attr("data-flipcounterimgpath"), //WP2.9 uses jQuery-1.3.2, no $.data()
-        digitHeight: 30,
-        digitWidth: 23,
+        digitHeight: 28,
+        digitWidth: 21,
         numFractionalDigits:0, // number of places right of the decimal point to maintain
         easing: jQuery.easing.easeOutQuint, //so it slows way down at the end
         formatNumberOptions:{format:"##,###,###.",locale:"us"},
